@@ -1,3 +1,12 @@
 .button{
-  background-color: orange;
+  background-color: grey;
+  color: white;
+  height: 16vh;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  border-style: solid;
+  border-color: lightgrey;
 }
