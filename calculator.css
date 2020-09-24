@@ -1,16 +1,26 @@
 .button{
   background-color: grey;
   color: white;
-  height: 16vh;
+  height: calc(14vh - 2px);
   width: calc(25% - 2px);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 5vw;
-  /*border-style: solid;
-  border-color: lightgrey;*/
   margin: 1px;
   float: left;
+}
+
+.display{
+  background-color: grey;
+  color: white;
+  height: calc(30vh - 2px);
+  width: calc(100% - 2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  margin: 1px;
 }
 
 body{
