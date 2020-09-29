@@ -5,7 +5,8 @@ let operatorPrecedence = {
   "+":1,
   "-":1,
   "x":2,
-  "\xF7":2
+  "\xF7":2,
+  "%":3
 };
 
 function insert(button){
@@ -38,6 +39,8 @@ function process(){
     case "\xF7":
       result = numberA / numberB;
       break;
+    case "%":
+      result = 0.01 * numberA * numberB;
   }
   operandStack.push(result);
 }
@@ -51,6 +54,7 @@ function evaluateExpression(){
       case "-":
       case "x":
       case "\xF7":
+      case "%":
         if(operatorStack.length === 0){
           operatorStack.push(symbol)
         }
